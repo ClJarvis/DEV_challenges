@@ -4,6 +4,7 @@
   --Yellow: #ffd700;
   --Red: #ff0000f2;
  --DarkRed: #a42624;
+ --PurpleAccent: #9C27B0;
 }
 
 * {
@@ -70,7 +71,7 @@
     rgb(255 0 167 / 34%),
      #ffa5007d,
      rgb(255 215 0 / 38%));
-  filter: drop-shadow(-2px 2px 13px #FF5722);
+  filter: drop-shadow(-2px 2px 8px #FF5722);
   position: absolute;
   z-index: 1;
 }
@@ -98,7 +99,7 @@
    var(--DarkRed),
     #ffa5007d,
       rgb(255 0 167 / 34%));
-  filter: drop-shadow(-2px 2px 13px var(--Red));
+  filter: drop-shadow(-2px 2px 3px var(--Red));
   filter: blur(9px);
   position: relative;
 }
@@ -111,7 +112,7 @@
   margin-left: 535px;
   background: linear-gradient( var(--White),  rgba(255, 215, 0, 0.38), #e9ff7c00);
  
-  filter: drop-shadow(-2px 2px 13px #e9ff7c);
+  filter: drop-shadow(-2px 2px 8px #e9ff7c);
   position: relative;
   z-index: 4;
   
@@ -131,25 +132,35 @@
 
 .comet{
   width: 150px;
-  height: 4px;
+  height: 10px;
   background: var(--White);
   margin-bottom: 20px;
   position: absolute;
   filter: blur(2px);
   border-bottom-style: solid;
-  border-right:8px solid purple;
+  border-right:10px solid var(--PurpleAccent);
   border-bottom-right-radius: 20%;
   border-top-right-radius: 20%;
-  border-bottom-color: purple;
+  border-bottom-color: var(--PurpleAccent);
+
+  display: flex;
+  justify-content: flex-end;
 }
 .comet_short{
   width: 100px;
-  margin-bottom: -16px;
+  margin-bottom: -24px;
 }
 
 .comet_med{
   width: 120px;
-  margin-bottom: -46px;
+  margin-bottom: -66px;
+}
+
+.trailer {
+  width: 34px;
+  height: 10px;
+  background: purple;
+  filter: blur(2px);
 }
 
 
